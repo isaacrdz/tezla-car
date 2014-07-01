@@ -1,0 +1,111 @@
+body
+{
+	background: #222;
+	color:#EEE;
+	font-family: Arial;
+	font-size: 16px;
+	text-align: center;
+}
+
+header
+{
+	background:  url(logo.png) no-repeat 98% center,
+				 url(fondo.png);
+	background-size: 70px, 100px 100px;
+	margin:0 0 1em 0;
+	padding: 0.5em 0;
+	width: 100%;
+}
+
+header h1
+{
+	font-size: 2em;
+	margin: 0;
+	text-shadow:rgba(255,0,0,0.5) 5px 5px 10px;
+}
+
+header h2
+{
+	margin:0;
+	font-weight: normal;
+	font-size: 1.1em;
+}
+
+nav
+{
+	background: rgba(60,60,180,0.5);
+	width: 100%;
+	position: fixed;
+	bottom:0;
+	left: 0;
+}
+
+nav ul
+{
+	list-style: none;
+}
+
+nav ul li
+{
+	display: inline-block;
+}
+
+nav ul li a
+{
+	background:#D23D15;
+	border-radius: 0.5em;
+	color: white;
+	display: inline-block;
+	margin: 0 1em 0 0;
+	padding: 0.5em 1em;
+	text-decoration: none;
+	transition:all 1s linear;
+	-webkit-transition:all 1s linear;
+}
+
+nav ul li a:hover
+{
+	background: white;
+	color: black;
+	transform:scale(1.2) rotate(-365deg);
+	-webkit-transform:scale(1.2) rotate(-365deg);
+	
+}
+
+
+
+#cochecito
+{
+	background: white;
+	color:#222;
+	text-align: left;
+	width: 50%;
+}
+
+#cochecito img
+{
+	width: 100%;
+}
+
+#cochecito figcaption
+{
+	margin:1em;
+}
+
+#cochecito, #historia
+{
+	display: inline-block;
+	vertical-align: top;
+}
+#historia
+{
+	background: rgba(0,0,0,0.6);
+	border-radius: 0.5em;
+	box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 10px;
+	margin:0 2% 7em 1em;
+	padding: 1em;
+	text-align: justify;
+	text-shadow:rgba(0,0,0,0.7) 2px 2px 5px;
+	width: 30%;
+}
+
