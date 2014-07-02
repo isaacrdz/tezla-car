@@ -10,8 +10,11 @@ function movida()
 	//JSON
 	var cambiosCSS = 
 	{
-		background:"red",
-		color:"#222"
+		margin:0,
+		overflow:"hidden",
+		padding:0,
+		width:0
+
 	};
 
 	$("#historia").css(cambiosCSS);
