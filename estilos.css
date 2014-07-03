@@ -102,7 +102,7 @@ nav ul li a:hover
 	background: rgba(0,0,0,0.6);
 	border-radius: 0.5em;
 	box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 10px;
-	display: none;
+	display: inline-block;
 	margin:0 2% 7em 1em;
 	padding: 1em;
 	text-align: justify;
@@ -117,12 +117,15 @@ nav ul li a:hover
 	background: rgba(0,0,0,0.8);
 	border-radius: 0.5em;
 	box-shadow: rgba(255,255,255,0.5) 5px 5px 10px inset;
-	margin:0 0 6em 2%;
-	padding: 1em 1em 0;
-	overflow: hidden;
-	width: 30%;
-	vertical-align: top;
 	display: inline-block;
+	height: 0;
+	opacity: 0;
+	margin:0 0 6em 2%;
+	overflow: hidden;
+	padding: 1em 1em 0;
+	transition:all 1s ease;
+	vertical-align: top;
+	width: 0%;
 }
 
 #personalizacion article
@@ -155,7 +158,7 @@ nav ul li a:hover
 {
 border: 4px solid black;
 opacity: 1;
-transform:scale(1.1);
+-webkit-transform:scale(1.1);
 
 }
 
@@ -210,6 +213,7 @@ transform:scale(1.1);
 #personalizacion #llantas figure:hover img
 {
 	transform:rotate(360deg);
+	-webkit-transform:rotate(360deg);
 
 }
 
@@ -217,6 +221,6 @@ transform:scale(1.1);
 #personalizacion #llantas figure img
 {
 	transition:all 1s ease;
-	-webkit-transition:all 1s ease;
+
 	max-width: 100%;
 }
